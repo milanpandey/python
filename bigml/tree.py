@@ -318,6 +318,7 @@ class Tree(object):
                 leaves += child.get_leaves()
         else:
             leaves += [{
+                'id': self.id,
                 'confidence': self.confidence,
                 'count': self.count,
                 'distribution': self.distribution,
